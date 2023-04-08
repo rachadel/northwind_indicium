@@ -23,3 +23,24 @@ sources:
             tests:
               - unique
               - not_null
+      
+      - name: orders
+        description: Tabela com informações de vendas.
+        columns:
+          - name: order_id
+            description: Chave primária da tabela orders.
+            tests:
+              - unique
+              - not_null
+
+      - name: orders_details
+        description: Tabela com informações de detalhes da venda.
+
+      - name: customers
+        description: Tabela com informações de detalhes de clientes.
+      
+      - name: suppliers
+        description: Tabela com informações de detalhes de fornecedores.
+      
+      - name: categories
+        description: Tabela com informações de detalhes de categorias.
