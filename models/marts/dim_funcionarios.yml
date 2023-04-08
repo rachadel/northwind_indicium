@@ -1,0 +1,17 @@
+
+version: 2
+
+models:
+  - name: dim_funcionarios
+    description: Essa é a dimensão com dados de funcionários
+    columns:
+      - name: sk_funcionario
+        description: Chave Surrogate Key da tabela ordenada pelo id da tabela Employees
+        tests:
+          - unique
+          - not_null
+        
+      - name: id_funcionario
+
+      - name: nm_funcionario
+              

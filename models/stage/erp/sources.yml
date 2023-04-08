@@ -16,4 +16,10 @@ sources:
               - not_null
 
       - name: products
-      
+        description: Tabela com informações de produtos.
+        columns:
+          - name: product_id
+            description: Chave primária da tabela produtos.
+            tests:
+              - unique
+              - not_null

@@ -7,9 +7,9 @@ with
         ),
     renomear as (
         select
-              cast(employee_id as int)    as func_id
-            , cast(last_name   as string) as func_sobrenome
-            , cast(first_name  as string) as func_nome   
+              cast(employee_id as int)    as func_id 
+            , cast(reports_to  as int)    as func_id_gerente 
+            , cast(first_name || ' ' || last_name as string) as func_nome_completo
             , cast(birth_date  as date)   as func_data_nascimento    
             , cast(hire_date   as date)   as func_data_contratacao   
             , cast(address     as string) as func_endereco   
@@ -18,7 +18,6 @@ with
             , cast(postal_code as string) as func_cep      
             , cast(country     as string) as func_pais   
             , cast(notes       as string) as func_notas
-            , cast(reports_to  as int)    as func_id_gerente   
         from
             fonte_funcionarios
     )
