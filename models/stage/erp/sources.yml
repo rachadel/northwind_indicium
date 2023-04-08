@@ -33,7 +33,7 @@ sources:
               - unique
               - not_null
 
-      - name: orders_details
+      - name: order_details
         description: Tabela com informações de detalhes da venda.
 
       - name: customers
